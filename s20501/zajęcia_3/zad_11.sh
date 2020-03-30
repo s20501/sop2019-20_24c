@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Ciąg fibonnaciego rekurencja
+
 function fib {
     if [ $1 -le 0 ]; then
         echo 0
