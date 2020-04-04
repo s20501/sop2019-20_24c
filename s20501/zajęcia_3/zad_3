@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Napisz skrypt, który sprawdzi, czy jego nazwa kończy się .sh. Jeśli nie, to niech zmieni swoją nazwę poprzez dopisanie tego rozszerzenia 
+# Napisz skrypt, który sprawdzi, czy jego nazwa kończy się .sh. Jeśli nie, to niech zmieni swoją nazwę poprzez dopisanie tego rozszerzenia
 
 filename="$(basename $0)"
 name="${filename%.*}"
@@ -9,4 +9,4 @@ extension="${filename##*.}"
 if [ "${extension}" != "sh" ]; then
     mv $0 ${0}.sh
 
-fi    
+fi
